@@ -13,24 +13,30 @@ namespace Game
         {
             for (int i = 0; i < 50; i++)
             {
-                CheckNumber(i);
+               if(CheckNumber(i) == 0)
+               {
+
+               }
+                
             }
         }
 
-        public void CheckNumber(int number)
+        public string CheckNumber(int number)
         {
             if (number % 5 == 0 && number % 3 == 0)
             {
-                Console.WriteLine("FizzBuzz");
+                return "fizzbuzz";
             }
-            else if ( number % 3 == 0)
+            else if (number % 3 == 0)
             {
-                Console.WriteLine("Fizz");
+                return "fizz";
             }
             else if (number % 5 == 0)
             {
-                Console.WriteLine("Buzz");
+                return "buzz";
             }
+
+            else return "";
         }
     }
 }
