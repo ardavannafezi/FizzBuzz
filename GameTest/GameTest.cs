@@ -1,14 +1,23 @@
+using Game;
+using GameLogic;
 using System;
 using Xunit;
 
 namespace GameTest
 {
-    public class UnitTest1
+    public class GameTest
     {
-        [Fact]
-        public void Test1()
-        {
+        private readonly GameLogic _sut;
 
+        public GameTest()
+        {
+            _sut = new GameLogic();
+        }
+
+        [Fact]
+        public void IsNumber3()
+        {
+            
         }
     }
 }
